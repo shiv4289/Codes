@@ -24,20 +24,20 @@ int query(int t[], int n, int l, int r) {  // sum on interval [l, r)
   return res;
 }
 
-//int main() {
-//	const int N = 1e5;  // limit for array size
-//	int n;  // array size
-//	int t[2 * N];
-//
-//	scanf("%d", &n);
-//	for (int i = 0; i < n; ++i) scanf("%d", t + n + i);
-//
-//	build(t, n);
-//    printf("%d\n", query(t, n, 1, 3));
-//
-//	modify(t, n, 1, 10);
-//    printf("%d\n", query(t, n, 1, 3));
-//
-//    return 0;
-//}
+int main() {
+	const int N = 1e5;  // limit for array size
+	int n;  // array size
+	int t[2 * N];
+
+	scanf("%d", &n);
+	for (int i = 0; i < n; ++i) scanf("%d", t + n + i);
+
+	build(t, n);
+    printf("%d\n", query(t, n, 1, 3));
+
+	modify(t, n, 1, 10);
+    printf("%d\n", query(t, n, 1, 3));
+
+    return 0;
+}
 
